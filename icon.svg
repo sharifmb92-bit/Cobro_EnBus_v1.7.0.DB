@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0062E6"/>
+      <stop offset="50%" stop-color="#007AFF"/>
+      <stop offset="100%" stop-color="#003699"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34C759"/>
+      <stop offset="100%" stop-color="#28A745"/>
+    </linearGradient>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Tile -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="100" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="6"/>
+
+  <g filter="url(#dropShadow)">
+    <!-- BUS SYMBOL BASE -->
+    <path d="M 120 130 C 120 100, 150 90, 256 90 C 362 90, 392 100, 392 130 L 392 320 C 392 340, 376 350, 360 350 L 152 350 C 136 350, 120 340, 120 320 Z" fill="#FFFFFF" />
+
+    <!-- Windshield -->
+    <path d="M 144 135 C 144 120, 160 112, 256 112 C 352 112, 368 120, 368 135 L 368 205 C 368 212, 360 218, 350 218 L 162 218 C 152 218, 144 212, 144 205 Z" fill="#1C1C1E" />
+
+    <!-- Route LED Screen -->
+    <rect x="196" y="124" width="120" height="20" rx="6" fill="#007AFF"/>
+    <text x="256" y="139" font-family="-apple-system, sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">L01 BUS</text>
+
+    <!-- Silhouettes -->
+    <circle cx="180" cy="180" r="14" fill="#007AFF" opacity="0.8"/>
+    <path d="M 160 210 C 160 195, 200 195, 200 210 Z" fill="#007AFF" opacity="0.8"/>
+
+    <!-- Headlights & Grille -->
+    <circle cx="160" cy="290" r="18" fill="#FFCC00"/>
+    <circle cx="352" cy="290" r="18" fill="#FFCC00"/>
+    <rect x="200" y="280" width="112" height="20" rx="6" fill="#E5E5EA"/>
+
+    <!-- Wheels -->
+    <rect x="136" y="340" width="36" height="30" rx="8" fill="#1C1C1E"/>
+    <rect x="340" y="340" width="36" height="30" rx="8" fill="#1C1C1E"/>
+  </g>
+
+  <!-- OVERLAY PAYMENT EMBLEM -->
+  <g filter="url(#dropShadow)">
+    <circle cx="360" cy="360" r="95" fill="url(#accentGrad)"/>
+    <circle cx="360" cy="360" r="95" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+
+    <!-- Waves Symbol -->
+    <path d="M 310 375 A 50 50 0 0 1 310 345" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 322 385 A 65 65 0 0 1 322 335" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 334 395 A 80 80 0 0 1 334 325" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- QR Code Graphic -->
+    <rect x="365" y="325" width="50" height="50" rx="8" fill="#FFFFFF"/>
+    <rect x="371" y="331" width="14" height="14" fill="#1C1C1E"/>
+    <rect x="395" y="331" width="14" height="14" fill="#1C1C1E"/>
+    <rect x="371" y="355" width="14" height="14" fill="#1C1C1E"/>
+
+    <!-- Checkmark Success -->
+    <circle cx="395" cy="395" r="22" fill="#1C1C1E"/>
+    <path d="M 384 395 L 392 402 L 406 388" fill="none" stroke="#34C759" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- medbasha -->
+</svg>
